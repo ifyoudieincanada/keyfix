@@ -128,7 +128,7 @@ def word_with_approximation(word):
     suggestion = en_US.suggest(word)
 
     if len(suggestion) > 0:
-        corrected = suggestion[0].decode("utf-8")
+        corrected = suggestion[0].decode("utf-8").lower()
         probability = SequenceMatcher(None, word, corrected).ratio()
         return (corrected, probability)
     else:
@@ -137,7 +137,7 @@ def word_with_approximation(word):
 def main():
     keyboard = Keyboard("qwerty.json")
 
-    for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe","AJ","escEJ", "KOGvwr"]:
+    for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe", "AJ", "escEJ", "KOGvwr", "yu;rt", "rtkwe"]:
         shifted = keyboard.shift(word)
 
         found = False
