@@ -29,20 +29,7 @@ class Key(object):
 
     def shift(self, direction):
         """Returns the key in the proposed direction"""
-        if direction.lower() == "left":
-            return self.keys['left']
-        elif direction.lower() == "up_left":
-            return self.keys['top_left']
-        elif direction.lower() == "up_right":
-            return self.keys['top_right']
-        elif direction.lower() == "right":
-            return self.keys['right']
-        elif direction.lower() == "down_right":
-            return self.keys['bottom_right']
-        elif direction.lower() == "down_left":
-            return self.keys['bottom_left']
-        else:
-            return None
+        return self.keys[direction.lower()]
 
     def print_key(self):
         string = "  "
@@ -72,8 +59,35 @@ class Keyboard(object):
         keys = list(map(self.__make_key__, data))
         self.keys = list(map(lambda key: key[0].set_surrounding_letters(key[1], list(zip(*keys))[0]), keys))
 
+        self.key_dict = {}
+        for key in self.keys:
+            self.key_dict[key.lower_letter] = key
+            self.key_dict[key.upper_letter] = key
+
     def __make_key__(self, key_dict):
         return (Key(key_dict['letter'], key_dict['upper'], key_dict['caps_mod']), key_dict)
+
+    def __shift_keys__(self, keys, direction):
+        return list(map(lambda key: key.shift(direction), keys))
+
+    def __keys_to_string__(self, keys):
+        return "".join(list(map(lambda key: key.lower_letter, keys)))
+
+    def shift(self, word):
+        """Shift provided word in every direction."""
+        # Convert string to list of Keys
+        keys = list(map(lambda letter: self.key_dict[letter], word))
+
+        # For each direction, shift Keys into new Key lists
+        words = map(lambda direction: self.__shift_keys__(keys, direction), directions)
+
+        # Filter out Key lists that contain a None character
+        real_words = filter(lambda keys: None not in keys, words)
+
+        # Convert Key lists into Strings
+        strings = map(lambda keys: self.__keys_to_string__(keys), real_words)
+
+        return [word] + list(strings)
 
     def print_keyboard(self):
         for key in self.keys:
@@ -81,6 +95,9 @@ class Keyboard(object):
 
 def main():
     keyboard = Keyboard("qwerty.json")
+
+    for word in ["y3oo9", "biow", "pkw0"]:
+        print(str(keyboard.shift(word)))
 
 if __name__ == "__main__":
     main()
