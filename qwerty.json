@@ -4,8 +4,8 @@
     "upper": "~",
     "caps_mod": false,
     "right": "1",
-    "bottom_right": "tab",
-    "bottom_left": "tab",
+    "bottom_right": "\t",
+    "bottom_left": "\t",
     "hand": "left"
   },
   {
@@ -15,7 +15,7 @@
     "left": "`",
     "right": "2",
     "bottom_right": "q",
-    "bottom_left": "tab",
+    "bottom_left": "\t",
     "hand": "left"
   },
   {
@@ -138,8 +138,8 @@
     "hand": "right"
   },
   {
-    "letter": "tab",
-    "upper": "tab",
+    "letter": "\t",
+    "upper": "\t",
     "caps_mod": false,
     "top_left": "`",
     "top_right": "1",
@@ -152,7 +152,7 @@
     "letter": "q",
     "upper": "Q",
     "caps_mod": true,
-    "left": "tab",
+    "left": "\t",
     "top_left": "1",
     "top_right": "2",
     "right": "w",
@@ -288,7 +288,7 @@
     "top_left": "=",
     "top_right": "backspace",
     "right": "\\",
-    "bottom_right": "enter",
+    "bottom_right": "\n",
     "bottom_left": "'",
     "hand": "right"
   },
@@ -299,15 +299,15 @@
     "left": "]",
     "top_left": "backspace",
     "top_right": "backspace",
-    "bottom_right": "enter",
-    "bottom_left": "enter",
+    "bottom_right": "\n",
+    "bottom_left": "\n",
     "hand": "right"
   },
   {
     "letter": "caps",
     "upper": "caps",
     "caps_mod": false,
-    "top_left": "tab",
+    "top_left": "\t",
     "top_right": "q",
     "right": "a",
     "bottom_right": "l_shift",
@@ -441,14 +441,14 @@
     "left": ";",
     "top_left": "[",
     "top_right": "]",
-    "right": "enter",
+    "right": "\n",
     "bottom_right": "r_shift",
     "bottom_left": "/",
     "hand": "right"
   },
   {
-    "letter": "enter",
-    "upper": "enter",
+    "letter": "\n",
+    "upper": "\n",
     "caps_mod": false,
     "left": "'",
     "top_left": "]",
@@ -571,7 +571,7 @@
     "caps_mod": false,
     "left": "/",
     "top_left": "'",
-    "top_right": "enter",
+    "top_right": "\n",
     "hand": "right"
   }
 ]

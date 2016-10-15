@@ -75,13 +75,40 @@ class Keyboard(object):
     def __keys_to_string__(self, keys):
         return "".join(list(map(lambda key: key.lower_letter, keys)))
 
+    def __caps_insert__(self,keys):
+        return_list = []
+        previous = "lower"
+        current = "lower"
+
+        for key, letter in keys:
+            # After these checks, current may not == previous
+            if letter == key.upper_letter:
+                current = "upper"
+
+            if letter == key.lower_letter:
+                current = "lower"
+
+            # If current != previous, we know that caps lock may have been pressed
+            if previous != current:
+                return_list.append(self.key_dict['caps'])
+
+            return_list.append(key)
+
+            # Update previous to most recent value
+            previous = current
+
+        return return_list
+
     def shift(self, word):
         """Shift provided word in every direction."""
         # Convert string to list of Keys
-        keys = list(map(lambda letter: self.key_dict[letter], word))
+        keys = list(zip(map(lambda letter: self.key_dict[letter], word), word))
+
+        # We have inserted the caps keys so we can properly shift
+        caps_keys = self.__caps_insert__(keys)
 
         # For each direction, shift Keys into new Key lists
-        words = map(lambda direction: self.__shift_keys__(keys, direction), directions)
+        words = map(lambda direction: self.__shift_keys__(caps_keys, direction), directions)
 
         # Filter out Key lists that contain a None character
         real_words = filter(lambda keys: None not in keys, words)
@@ -110,7 +137,7 @@ def word_with_approximation(word):
 def main():
     keyboard = Keyboard("qwerty.json")
 
-    for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe"]:
+    for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe","AJ","escEJ", "KOGvwr"]:
         shifted = keyboard.shift(word)
 
         found = False
