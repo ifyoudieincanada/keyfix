@@ -137,7 +137,7 @@ def word_with_approximation(word):
 def main():
     keyboard = Keyboard("qwerty.json")
 
-    for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe", "AJ", "escEJ", "KOGvwr", "yu;rt", "rtkwe"]:
+    for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe", "AJ", "escEJ", "KOGvwr", "yu;rt", "rtkwe", "56o34"]:
         shifted = keyboard.shift(word)
 
         found = False
