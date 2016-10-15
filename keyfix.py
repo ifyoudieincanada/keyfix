@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import json
+import hunspell
+from difflib import SequenceMatcher
 
 directions = ['left', 'top_left', 'top_right', 'right', 'bottom_left', 'bottom_right']
 
@@ -93,11 +95,39 @@ class Keyboard(object):
         for key in self.keys:
             key.print_key()
 
+en_US = hunspell.HunSpell("/usr/share/myspell/dicts/en_US.dic", "/usr/share/myspell/dicts/en_US.aff")
+
+def word_with_approximation(word):
+    suggestion = en_US.suggest(word)
+
+    if len(suggestion) > 0:
+        corrected = suggestion[0].decode("utf-8")
+        probability = SequenceMatcher(None, word, corrected).ratio()
+        return (corrected, probability)
+    else:
+        return (word, 0)
+
 def main():
     keyboard = Keyboard("qwerty.json")
 
-    for word in ["y3oo9", "biow", "pkw0"]:
-        print(str(keyboard.shift(word)))
+    for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe"]:
+        shifted = keyboard.shift(word)
+
+        found = False
+        correct_word = None
+        for spelling in shifted:
+            if en_US.spell(spelling):
+                found = True
+                correct_word = spelling
+
+
+        if not found:
+            corrected    = map(word_with_approximation, shifted)
+            correct_word = max(corrected, key=lambda pair: pair[1])[0]
+
+        print("Word: " + word)
+        print("  Probably: " + correct_word)
+
 
 if __name__ == "__main__":
     main()
