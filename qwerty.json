@@ -1,0 +1,524 @@
+[
+  {
+    "letter": "`",
+    "upper": "~",
+    "caps_mod": false,
+    "right": "1",
+    "bottom_right": "tab",
+    "bottom_left": "tab"
+  },
+  {
+    "letter": "1",
+    "upper": "!",
+    "caps_mod": false,
+    "left": "`",
+    "right": "2",
+    "bottom_right": "q",
+    "bottom_left": "tab"
+  },
+  {
+    "letter": "2",
+    "upper": "@",
+    "caps_mod": false,
+    "left": "1",
+    "right": "3",
+    "bottom_right": "w",
+    "bottom_left": "q"
+  },
+  {
+    "letter": "3",
+    "upper": "#",
+    "caps_mod": false,
+    "left": "2",
+    "right": "4",
+    "bottom_right": "e",
+    "bottom_left": "w"
+  },
+  {
+    "letter": "4",
+    "upper": "$",
+    "caps_mod": false,
+    "left": "3",
+    "right": "5",
+    "bottom_right": "r",
+    "bottom_left": "e"
+  },
+  {
+    "letter": "5",
+    "upper": "%",
+    "caps_mod": false,
+    "left": "4",
+    "right": "6",
+    "bottom_right": "t",
+    "bottom_left": "r"
+  },
+  {
+    "letter": "6",
+    "upper": "^",
+    "caps_mod": false,
+    "left": "5",
+    "right": "7",
+    "bottom_right": "y",
+    "bottom_left": "t"
+  },
+  {
+    "letter": "7",
+    "upper": "&",
+    "caps_mod": false,
+    "left": "6",
+    "right": "8",
+    "bottom_right": "u",
+    "bottom_left": "y"
+  },
+  {
+    "letter": "8",
+    "upper": "*",
+    "caps_mod": false,
+    "left": "7",
+    "right": "9",
+    "bottom_right": "i",
+    "bottom_left": "u"
+  },
+  {
+    "letter": "9",
+    "upper": "(",
+    "caps_mod": false,
+    "left": "8",
+    "right": "0",
+    "bottom_right": "o",
+    "bottom_left": "i"
+  },
+  {
+    "letter": "0",
+    "upper": ")",
+    "caps_mod": false,
+    "left": "9",
+    "right": "-",
+    "bottom_right": "p",
+    "bottom_left": "o"
+  },
+  {
+    "letter": "-",
+    "upper": "_",
+    "caps_mod": false,
+    "left": "0",
+    "right": "=",
+    "bottom_right": "[",
+    "bottom_left": "p"
+  },
+  {
+    "letter": "=",
+    "upper": "+",
+    "caps_mod": false,
+    "left": "-",
+    "right": "backspace",
+    "bottom_right": "]",
+    "bottom_left": "["
+  },
+  {
+    "letter": "backspace",
+    "upper": "backspace",
+    "caps_mod": false,
+    "left": "=",
+    "bottom_right": "\\",
+    "bottom_left": "]"
+  },
+  {
+    "letter": "tab",
+    "upper": "tab",
+    "caps_mod": false,
+    "top_left": "`",
+    "top_right": "1",
+    "right": "q",
+    "bottom_right": "caps-lock",
+    "bottom_left": "caps-lock"
+  },
+  {
+    "letter": "q",
+    "upper": "Q",
+    "caps_mod": true,
+    "left": "tab",
+    "top_left": "1",
+    "top_right": "2",
+    "right": "w",
+    "bottom_right": "a",
+    "bottom_left": "caps-lock"
+  },
+  {
+    "letter": "w",
+    "upper": "W",
+    "caps_mod": true,
+    "left": "q",
+    "top_left": "2",
+    "top_right": "3",
+    "right": "e",
+    "bottom_right": "s",
+    "bottom_left": "a"
+  },
+  {
+    "letter": "e",
+    "upper": "E",
+    "caps_mod": true,
+    "left": "w",
+    "top_left": "3",
+    "top_right": "4",
+    "right": "r",
+    "bottom_right": "d",
+    "bottom_left": "s"
+  },
+  {
+    "letter": "r",
+    "upper": "R",
+    "caps_mod": true,
+    "left": "e",
+    "top_left": "4",
+    "top_right": "5",
+    "right": "t",
+    "bottom_right": "f",
+    "bottom_left": "d"
+  },
+  {
+    "letter": "t",
+    "upper": "T",
+    "caps_mod": true,
+    "left": "r",
+    "top_left": "5",
+    "top_right": "6",
+    "right": "y",
+    "bottom_right": "g",
+    "bottom_left": "f"
+  },
+  {
+    "letter": "y",
+    "upper": "Y",
+    "caps_mod": true,
+    "left": "t",
+    "top_left": "6",
+    "top_right": "7",
+    "right": "u",
+    "bottom_right": "h",
+    "bottom_left": "g"
+  },
+  {
+    "letter": "u",
+    "upper": "U",
+    "caps_mod": true,
+    "left": "y",
+    "top_left": "7",
+    "top_right": "8",
+    "right": "i",
+    "bottom_right": "j",
+    "bottom_left": "h"
+  },
+  {
+    "letter": "i",
+    "upper": "I",
+    "caps_mod": true,
+    "left": "u",
+    "top_left": "8",
+    "top_right": "9",
+    "right": "o",
+    "bottom_right": "k",
+    "bottom_left": "j"
+  },
+  {
+    "letter": "o",
+    "upper": "O",
+    "caps_mod": true,
+    "left": "i",
+    "top_left": "9",
+    "top_right": "0",
+    "right": "p",
+    "bottom_right": "l",
+    "bottom_left": "k"
+  },
+  {
+    "letter": "p",
+    "upper": "P",
+    "caps_mod": true,
+    "left": "o",
+    "top_left": "0",
+    "top_right": "-",
+    "right": "[",
+    "bottom_right": ";",
+    "bottom_left": "l"
+  },
+  {
+    "letter": "[",
+    "upper": "{",
+    "caps_mod": false,
+    "left": "p",
+    "top_left": "-",
+    "top_right": "=",
+    "right": "]",
+    "bottom_right": "'",
+    "bottom_left": ";"
+  },
+  {
+    "letter": "]",
+    "upper": "}",
+    "caps_mod": false,
+    "left": "[",
+    "top_left": "=",
+    "top_right": "backspace",
+    "right": "\\",
+    "bottom_right": "enter",
+    "bottom_left": "'"
+  },
+  {
+    "letter": "\\",
+    "upper": "|",
+    "caps_mod": false,
+    "left": "]",
+    "top_left": "backspace",
+    "top_right": "backspace",
+    "bottom_right": "enter",
+    "bottom_left": "enter"
+  },
+  {
+    "letter": "caps",
+    "upper": "caps",
+    "caps_mod": false,
+    "top_left": "tab",
+    "top_right": "q",
+    "right": "a",
+    "bottom_right": "l_shift",
+    "bottom_left": "l_shift"
+  },
+  {
+    "letter": "a",
+    "upper": "A",
+    "caps_mod": true,
+    "left": "caps",
+    "top_left": "q",
+    "top_right": "w",
+    "right": "s",
+    "bottom_right": "z",
+    "bottom_left": "l_shift"
+  },
+  {
+    "letter": "s",
+    "upper": "S",
+    "caps_mod": true,
+    "left": "a",
+    "top_left": "w",
+    "top_right": "e",
+    "right": "d",
+    "bottom_right": "x",
+    "bottom_left": "z"
+  },
+  {
+    "letter": "d",
+    "upper": "D",
+    "caps_mod": true,
+    "left": "s",
+    "top_left": "e",
+    "top_right": "r",
+    "right": "f",
+    "bottom_right": "c",
+    "bottom_left": "x"
+  },
+  {
+    "letter": "f",
+    "upper": "F",
+    "caps_mod": true,
+    "left": "d",
+    "top_left": "r",
+    "top_right": "t",
+    "right": "g",
+    "bottom_right": "v",
+    "bottom_left": "c"
+  },
+  {
+    "letter": "g",
+    "upper": "G",
+    "caps_mod": true,
+    "left": "f",
+    "top_left": "t",
+    "top_right": "y",
+    "right": "h",
+    "bottom_right": "b",
+    "bottom_left": "v"
+  },
+  {
+    "letter": "h",
+    "upper": "H",
+    "caps_mod": true,
+    "left": "g",
+    "top_left": "y",
+    "top_right": "u",
+    "right": "j",
+    "bottom_right": "n",
+    "bottom_left": "b"
+  },
+  {
+    "letter": "j",
+    "upper": "J",
+    "caps_mod": true,
+    "left": "h",
+    "top_left": "u",
+    "top_right": "i",
+    "right": "k",
+    "bottom_right": "m",
+    "bottom_left": "n"
+  },
+  {
+    "letter": "k",
+    "upper": "K",
+    "caps_mod": true,
+    "left": "j",
+    "top_left": "i",
+    "top_right": "o",
+    "right": "l",
+    "bottom_right": ",",
+    "bottom_left": "m"
+  },
+  {
+    "letter": "l",
+    "upper": "L",
+    "caps_mod": true,
+    "left": "k",
+    "top_left": "o",
+    "top_right": "p",
+    "right": ";",
+    "bottom_right": ".",
+    "bottom_left": ","
+  },
+  {
+    "letter": ";",
+    "upper": ":",
+    "caps_mod": false,
+    "left": "l",
+    "top_left": "p",
+    "top_right": "[",
+    "right": "'",
+    "bottom_right": "/",
+    "bottom_left": "."
+  },
+  {
+    "letter": "'",
+    "upper": "\"",
+    "caps_mod": false,
+    "left": ";",
+    "top_left": "[",
+    "top_right": "]",
+    "right": "enter",
+    "bottom_right": "r_shift",
+    "bottom_left": "/"
+  },
+  {
+    "letter": "enter",
+    "upper": "enter",
+    "caps_mod": false,
+    "left": "'",
+    "top_left": "]",
+    "top_right": "\\",
+    "bottom_left": "r_shift"
+  },
+  {
+    "letter": "l_shift",
+    "upper": "l_shift",
+    "caps_mod": false,
+    "top_left": "caps",
+    "top_right": "a",
+    "right": "z"
+  },
+  {
+    "letter": "z",
+    "upper": "Z",
+    "caps_mod": true,
+    "left": "l_shift",
+    "top_left": "a",
+    "top_right": "s",
+    "right": "x"
+  },
+  {
+    "letter": "x",
+    "upper": "X",
+    "caps_mod": true,
+    "left": "z",
+    "top_left": "s",
+    "top_right": "d",
+    "right": "c"
+  },
+  {
+    "letter": "c",
+    "upper": "C",
+    "caps_mod": true,
+    "left": "x",
+    "top_left": "d",
+    "top_right": "f",
+    "right": "v"
+  },
+  {
+    "letter": "v",
+    "upper": "V",
+    "caps_mod": true,
+    "left": "c",
+    "top_left": "f",
+    "top_right": "g",
+    "right": "b"
+  },
+  {
+    "letter": "b",
+    "upper": "B",
+    "caps_mod": true,
+    "left": "v",
+    "top_left": "g",
+    "top_right": "h",
+    "right": "n"
+  },
+  {
+    "letter": "n",
+    "upper": "N",
+    "caps_mod": true,
+    "left": "b",
+    "top_left": "h",
+    "top_right": "j",
+    "right": "m"
+  },
+  {
+    "letter": "m",
+    "upper": "M",
+    "caps_mod": true,
+    "left": "n",
+    "top_left": "j",
+    "top_right": "k",
+    "right": ","
+  },
+  {
+    "letter": ",",
+    "upper": "<",
+    "caps_mod": false,
+    "left": "m",
+    "top_left": "k",
+    "top_right": "l",
+    "right": "."
+  },
+  {
+    "letter": ".",
+    "upper": ">",
+    "caps_mod": false,
+    "left": ",",
+    "top_left": "l",
+    "top_right": ";",
+    "right": "/"
+  },
+  {
+    "letter": "/",
+    "upper": "?",
+    "caps_mod": false,
+    "left": ".",
+    "top_left": ";",
+    "top_right": "'",
+    "right": "r_shift"
+  },
+  {
+    "letter": "r_shift",
+    "upper": "r_shift",
+    "caps_mod": false,
+    "left": "/",
+    "top_left": "'",
+    "top_right": "enter"
+  }
+]
