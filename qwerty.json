@@ -138,6 +138,7 @@
     "hand": "right"
   },
   {
+    "physical": false,
     "letter": "\t",
     "upper": "\t",
     "caps_mod": false,
@@ -304,6 +305,7 @@
     "hand": "right"
   },
   {
+    "physical": false,
     "letter": "caps",
     "upper": "caps",
     "caps_mod": false,
@@ -457,6 +459,7 @@
     "hand": "right"
   },
   {
+    "physical": false,
     "letter": "l_shift",
     "upper": "l_shift",
     "caps_mod": false,
@@ -566,6 +569,7 @@
     "hand": "right"
   },
   {
+    "physical": false,
     "letter": "r_shift",
     "upper": "r_shift",
     "caps_mod": false,
