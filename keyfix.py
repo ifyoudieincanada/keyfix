@@ -166,7 +166,7 @@ def main():
         check_word(keyboard, word)
 
     print()
-    print("Type a word to correct, or type exit to quit")
+    print("Type a single word to correct, or type exit to quit (That means no spaces pls)")
 
     while (True):
         print("-------------------------------------------------")
