@@ -134,27 +134,50 @@ def word_with_approximation(word):
     else:
         return (word, 0)
 
+def check_word(keyboard, word):
+    shifted = keyboard.shift(word)
+
+    found = False
+    correct_word = None
+    for spelling in shifted:
+        if en_US.spell(spelling):
+            found = True
+            correct_word = spelling
+
+
+    if not found:
+        corrected    = map(word_with_approximation, shifted)
+        correct_word = max(corrected, key=lambda pair: pair[1])[0]
+
+    print("Word: " + word)
+    print("  Probably: " + correct_word)
+
+
 def main():
     keyboard = Keyboard("qwerty.json")
 
+    print("Shift Error Detection Program")
+    print("Made by Riley Trautman & Maisam Arif")
+    print("Type in any word with your fingers not on the homerow and you will get the word that you planned on typing instead")
+    print("For example hello shifted to the left is gwkki, a few examples are printed below")
+    print()
+
     for word in ["y3oo9", "biow", "pkw0", "helli", "j8w7j834w5aje8jt", "boop", "bepo", "beepe", "AJ", "escEJ", "KOGvwr", "yu;rt", "rtkwe", "56o34"]:
-        shifted = keyboard.shift(word)
+        check_word(keyboard, word)
 
-        found = False
-        correct_word = None
-        for spelling in shifted:
-            if en_US.spell(spelling):
-                found = True
-                correct_word = spelling
+    print()
+    print("Type a word to correct, or type exit to quit")
 
+    while (True):
+        print("-------------------------------------------------")
 
-        if not found:
-            corrected    = map(word_with_approximation, shifted)
-            correct_word = max(corrected, key=lambda pair: pair[1])[0]
+        print("input: ", end="")
+        word = input()
 
-        print("Word: " + word)
-        print("  Probably: " + correct_word)
+        if word == "exit":
+            return
 
+        check_word(keyboard, word)
 
 if __name__ == "__main__":
     main()
